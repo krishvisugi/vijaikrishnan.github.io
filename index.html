@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>P Vijai Krishnan | Footwear Product Development & Sourcing Leader</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Footwear product development and sourcing leader with 20+ years across exports, retail and e-commerce, improving cost, speed, quality and sustainability from concept to factory to customer." />
+  <style>
+    :root {
+      --bg: #020617;
+      --bg-alt: #020617;
+      --card: #020617;
+      --accent: #06b6d4;
+      --accent-soft: rgba(56, 189, 248, 0.16);
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --border: #1e293b;
+      --pill-bg: #020617;
+      --shadow-soft: 0 22px 60px rgba(15, 23, 42, 0.9);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at 0 0, #0f172a 0, #020617 55%) fixed,
+        radial-gradient(circle at 100% 100%, #111827 0, #020617 55%) fixed;
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .page {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 28px 16px 40px;
+    }
+
+    .hero-shell {
+      border-radius: 24px;
+      padding: 16px 18px 18px;
+      border: 1px solid rgba(148, 163, 184, 0.35);
+      background:
+        radial-gradient(circle at 10% -10%, rgba(56, 189, 248, 0.14), transparent 55%),
+        radial-gradient(circle at 100% 0, rgba(129, 140, 248, 0.16), transparent 55%),
+        rgba(15, 23, 42, 0.98);
+      box-shadow: 0 24px 60px rgba(15, 23, 42, 0.85);
+      margin-bottom: 22px;
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2.1fr);
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .hero-main {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .hero-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .avatar-ring {
+      width: 70px;
+      height: 70px;
+      border-radius: 999px;
+      padding: 2px;
+      background:
+        conic-gradient(from 190deg, #22d3ee, #4f46e5, #10b981, #22d3ee);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 18px 50px rgba(15, 23, 42, 0.9);
+      flex-shrink: 0;
+    }
+
+    .avatar-inner {
+      width: 100%;
+      height: 100%;
+      border-radius: inherit;
+      background:
+        radial-gradient(circle at 30% 30%, #22d3ee, #0369a1 50%, #020617 100%);
+      border: 2px solid #020617;
+    }
+
+    .hero-text-block {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    h1 {
+      font-size: 1.7rem;
+      letter-spacing: 0.01em;
+    }
+
+    .hero-subtitle {
+      font-size: 0.9rem;
+      color: #cbd5f5;
+    }
+
+    .hero-subtitle span {
+      color: #e5e7eb;
+      font-weight: 500;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .tag {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      padding: 2px 9px;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.5);
+      background: linear-gradient(115deg, rgba(15, 23, 42, 0.98), rgba(15, 23, 42, 0.92));
+      color: #e5e7eb;
+    }
+
+    .hero-summary {
+      font-size: 0.9rem;
+      color: #e5e7eb;
+      max-width: 640px;
+    }
+
+    .hero-metrics {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 16px;
+      margin-top: 4px;
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+
+    .hero-metrics strong {
+      color: #22d3ee;
+      font-weight: 600;
+    }
+
+    .hero-side {
+      border-radius: 18px;
+      border: 1px solid rgba(148, 163, 184, 0.35);
+      background:
+        radial-gradient(circle at 0 0, rgba(56, 189, 248, 0.18), transparent 55%),
+        rgba(15, 23, 42, 0.98);
+      padding: 12px 13px 14px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 10px;
+      box-shadow: 0 18px 50px rgba(15, 23, 42, 0.85);
+    }
+
+    .hero-image {
+      width: 100%;
+      height: 130px;
+      border-radius: 14px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin-bottom: 8px;
+      border: 1px solid rgba(148, 163, 184, 0.35);
+      background-image: url("YOUR-HERO-IMAGE.jpg"); /* Replace with your 4-stage prototyping visual */
+    }
+
+    .hero-caption {
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+
+    .hero-contact {
+      font-size: 0.8rem;
+      color: #e5e7eb;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 4px 10px;
+      margin-top: 6px;
+    }
+
+    .hero-contact span {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .hero-cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 8px;
+    }
+
+    .pill-link {
+      font-size: 0.78rem;
+      padding: 7px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.4);
+      background: linear-gradient(120deg, rgba(15, 23, 42, 0.96), rgba(15, 23, 42, 0.9));
+      color: #e5e7eb;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      text-decoration: none;
+    }
+
+    .pill-link.primary {
+      border-color: #22d3ee;
+      background: linear-gradient(to right, #22d3ee, #0ea5e9);
+      color: #020617;
+      font-weight: 600;
+      box-shadow: 0 14px 32px rgba(8, 47, 73, 0.8);
+    }
+
+    .pill-link span.icon {
+      font-size: 0.92rem;
+    }
+
+    main {
+      margin-top: 18px;
+      display: grid;
+      grid-template-columns: minmax(0, 2.15fr) minmax(0, 1.25fr);
+      gap: 18px;
+    }
+
+    section {
+      margin-bottom: 18px;
+    }
+
+    h2 {
+      font-size: 0.9rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+
+    .card {
+      border-radius: 18px;
+      padding: 14px 16px 15px;
+      border: 1px solid rgba(75, 85, 99, 0.6);
+      background: radial-gradient(circle at top left, rgba(30, 64, 175, 0.32), rgba(15, 23, 42, 0.98));
+      box-shadow: var(--shadow-soft);
+    }
+
+    .card-secondary {
+      background: radial-gradient(circle at top right, rgba(8, 47, 73, 0.42), rgba(15, 23, 42, 0.98));
+    }
+
+    .card-compact {
+      background: radial-gradient(circle at top, rgba(15, 118, 110, 0.38), rgba(15, 23, 42, 0.98));
+    }
+
+    .section-intro {
+      font-size: 0.85rem;
+      color: #e5e7eb;
+      margin-bottom: 8px;
+    }
+
+    .experience-item {
+      position: relative;
+      padding-left: 13px;
+      margin-bottom: 16px;
+    }
+
+    .experience-item::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 7px;
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: var(--accent);
+      box-shadow: 0 0 0 4px var(--accent-soft);
+    }
+
+    .role-line {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      align-items: baseline;
+      margin-bottom: 2px;
+    }
+
+    .role {
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .company {
+      font-size: 0.9rem;
+      color: #cbd5f5;
+    }
+
+    .meta {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+
+    .meta-note {
+      font-size: 0.75rem;
+      color: var(--muted);
+      font-style: italic;
+      margin-top: -2px;
+      margin-bottom: 6px;
+    }
+
+    .bullets {
+      list-style: none;
+      font-size: 0.82rem;
+      color: #e5e7eb;
+    }
+
+    .bullets li {
+      margin-bottom: 5px;
+    }
+
+    .metric {
+      color: #22d3ee;
+      font-weight: 600;
+    }
+
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 8px;
+    }
+
+    .badge {
+      font-size: 0.72rem;
+      padding: 3px 8px;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.5);
+      background: rgba(2, 6, 23, 0.96);
+      color: #e5e7eb;
+    }
+
+    .skills-list {
+      font-size: 0.82rem;
+      color: #e5e7eb;
+      display: grid;
+      gap: 4px;
+    }
+
+    .skills-list strong {
+      color: #e5e7eb;
+    }
+
+    .chips {
+      margin-top: 8px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .chip {
+      font-size: 0.75rem;
+      padding: 4px 8px;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.5);
+      background: rgba(15, 23, 42, 0.96);
+      color: #e5e7eb;
+    }
+
+    .case-image {
+      width: 100%;
+      border-radius: 14px;
+      border: 1px solid rgba(148, 163, 184, 0.4);
+      margin-bottom: 8px;
+      height: 150px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url("YOUR-CASE-STUDY-IMAGE.jpg"); /* Replace with pattern / cutting table image */
+    }
+
+    .small-caption {
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+
+    .aside-image {
+      width: 100%;
+      border-radius: 12px;
+      border: 1px solid rgba(148, 163, 184, 0.4);
+      margin-bottom: 8px;
+      height: 120px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url("YOUR-QA-OR-SUSTAINABILITY-IMAGE.jpg"); /* Replace with QA / sustainability image */
+    }
+
+    footer {
+      margin-top: 24px;
+      font-size: 0.75rem;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+      border-top: 1px solid rgba(31, 41, 55, 0.9);
+      padding-top: 10px;
+    }
+
+    @media (max-width: 960px) {
+      header {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      .hero-shell {
+        padding: 16px 14px 16px;
+      }
+      .hero-image {
+        height: 140px;
+      }
+    }
+
+    @media (max-width: 840px) {
+      main {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .hero-contact {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      .hero-cta-row {
+        flex-direction: column;
+        align-items: stretch;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="hero-shell">
+      <header>
+        <div class="hero-main">
+          <div class="hero-brand">
+            <div class="avatar-ring">
+              <div class="avatar-inner"></div>
+            </div>
+            <div class="hero-text-block">
+              <h1>P Vijai Krishnan</h1>
+              <div class="hero-subtitle">
+                <span>Footwear Product Development &amp; Sourcing Leader</span> · 20+ Years · E‑commerce, Retail &amp; Exports
+              </div>
+            </div>
+          </div>
+
+          <div class="tags">
+            <span class="tag">Footwear Product Development</span>
+            <span class="tag">Sourcing &amp; Vendor Strategy</span>
+            <span class="tag">Quality &amp; Operations Excellence</span>
+            <span class="tag">Value Engineering</span>
+            <span class="tag">Sustainability</span>
+          </div>
+
+          <p class="hero-summary">
+            Product development and sourcing leader in footwear with 20+ years across exports, retail and e‑commerce,
+            improving cost, speed, quality and sustainability from concept to factory to customer.
+          </p>
+
+          <div class="hero-metrics">
+            <span><strong>12% cost</strong> savings &amp; <strong>15% faster</strong> deliveries via strategic supplier renegotiation &amp; PLM.</span>
+            <span><strong>70+ categories</strong> launched &amp; multiple new lines driving double‑digit sales growth.</span>
+            <span><strong>Returns 28% → 10%</strong> through fit, last engineering &amp; Lean‑driven QA.</span>
+            <span><strong>75+ factories</strong> transformed on sustainability (plastic, waste, CO₂).</span>
+          </div>
+        </div>
+
+        <aside class="hero-side">
+          <div>
+            <div class="hero-image" aria-hidden="true"></div>
+            <div class="hero-caption">
+              4 stages of prototyping – from sketch to commercial launch. Leading footwear development across the full lifecycle.
+            </div>
+          </div>
+          <div class="hero-contact">
+            <span>📍 Bengaluru, India</span>
+            <span>📞 <a href="tel:+919500401212">+91 95004 01212</a></span>
+            <span>✉️ <a href="mailto:krishvisugi@gmail.com">krishvisugi@gmail.com</a></span>
+            <span>🔗 <a href="https://linkedin.com/in/krishvisugi" target="_blank" rel="noopener">linkedin.com/in/krishvisugi</a></span>
+          </div>
+          <div class="hero-cta-row">
+            <a class="pill-link primary" href="mailto:krishvisugi@gmail.com?subject=Footwear%20Product%20Development%20%26%20Sourcing%20Opportunity">
+              <span class="icon">📩</span><span>Discuss a senior footwear role</span>
+            </a>
+            <a class="pill-link" href="#case-studies">
+              <span class="icon">📊</span><span>View case studies</span>
+            </a>
+          </div>
+        </aside>
+      </header>
+    </div>
+
+    <main>
+      <div>
+        <section id="who-i-am">
+          <h2>Who I Am</h2>
+          <div class="card card-compact">
+            <p class="section-intro">
+              I operate at the intersection of product development, sourcing strategy and operations excellence for footwear.
+              I build vendor ecosystems, processes and product pipelines that allow brands and platforms to launch faster, reduce risk and scale profitably.
+            </p>
+            <div class="skills-list">
+              <div><strong>Core focus:</strong> end‑to‑end product creation, vendor performance, value engineering and sustainable scale‑up.</div>
+              <div><strong>Domains:</strong> fashion e‑commerce, lifestyle retail, export manufacturing and multi‑brand vendor networks.</div>
+            </div>
+          </div>
+        </section>
+
+        <section id="experience">
+          <h2>Experience &amp; Impact</h2>
+          <div class="card">
+            <div class="experience-item">
+              <div class="role-line">
+                <span class="role">Head – Product Development &amp; Sourcing (Footwear)</span>
+                <span class="company">· Myntra‑Jabong Pvt Ltd</span>
+              </div>
+              <div class="meta">Apr 2019 – Present · Bengaluru, India</div>
+              <div class="meta-note">(Official title: Manager – Product Development &amp; Sourcing)</div>
+              <ul class="bullets">
+                <li>
+                  Streamlined procurement and renegotiated 80% of key supplier contracts, achieving
+                  <span class="metric">12% cost reduction</span> and a <span class="metric">15% improvement</span> in on‑time delivery.
+                </li>
+                <li>
+                  Led development and launch of four new footwear lines, closing a 15% performance gap and driving
+                  <span class="metric">12% year‑on‑year sales growth</span>.
+                </li>
+                <li>
+                  Launched <span class="metric">70 new footwear categories in 70 days</span> to close assortment gaps, unlocking 15% sales uplift and sharper inventory turns.
+                </li>
+                <li>
+                  Reduced footwear returns from <span class="metric">28% to 10%</span> through Lean methods, fit optimization and stricter QA, improving revenue by 12%.
+                </li>
+                <li>
+                  Introduced virtual development and QA protocols during COVID‑19, enabling <span class="metric">75+ SKUs</span> to launch in 50 days and generating 12–15% growth in open footwear.
+                </li>
+                <li>
+                  Built a centralized material library that cut MOQs from 500 to <span class="metric">240 pairs</span>, reduced lead times by 15 days and optimized material costs by 2–3%, contributing 7–10% sales growth.
+                </li>
+                <li>
+                  Drove sustainability programs across <span class="metric">75+ factories</span>, reducing plastic packaging by 30%, diverting 1,000+ tonnes of waste and cutting CO₂ emissions by 22,000 tonnes annually.
+                </li>
+              </ul>
+            </div>
+
+            <div class="experience-item">
+              <div class="role-line">
+                <span class="role">Senior Sourcing &amp; Quality Manager (Footwear)</span>
+                <span class="company">· Myntra‑Jabong Pvt Ltd</span>
+              </div>
+              <div class="meta">Oct 2015 – Mar 2019 · Bengaluru, India</div>
+              <div class="meta-note">(Official title: Associate Manager – Sourcing &amp; Quality)</div>
+              <ul class="bullets">
+                <li>
+                  Re‑designed order management and real‑time vendor communication, reducing rejections from 12–15% to
+                  <span class="metric">5%</span> and increasing sales by <span class="metric">18%</span>.
+                </li>
+                <li>
+                  Addressed sizing issues by updating size charts and implementing structured fit tests, cutting returns from 40% to
+                  <span class="metric">25%</span>, avoiding 90% revenue loss and lifting NPS to 72.
+                </li>
+                <li>
+                  Accelerated PLM‑driven sourcing by <span class="metric">33%</span>, reducing proto TAT from 25 to 15 days and new order lead time from 120 to 90 days, leading to ~12% business improvement.
+                </li>
+                <li>
+                  Brought rejection rates down from 7–8% to <span class="metric">&lt;1%</span> and improved on‑time delivery by <span class="metric">35%</span> through CAD approvals, process improvements and upstream QC.
+                </li>
+                <li>
+                  Built a supplier approval framework with integrated lab testing, achieving <span class="metric">99% first‑time approval</span> and cutting production stoppages by 75%.
+                </li>
+                <li>
+                  Solved 25% chemical spew issues via root cause analysis and mould corrections, stabilizing defects at
+                  <span class="metric">1–3%</span> through process and material standardization.
+                </li>
+              </ul>
+            </div>
+
+            <div class="experience-item">
+              <div class="role-line">
+                <span class="role">Technical Head</span>
+                <span class="company">· Shoetek Agencies</span>
+              </div>
+              <div class="meta">Mar 2007 – Sep 2015 · Chennai, India</div>
+              <ul class="bullets">
+                <li>
+                  Implemented structured material grading, increasing cutability to <span class="metric">94%</span> and reducing material wastage by <span class="metric">18%</span>.
+                </li>
+                <li>
+                  Designed a scalable hand‑stitching workflow and training systems, expanding capacity to
+                  <span class="metric">2,000 pairs/day</span> and growing exports by <span class="metric">30%</span> with UK and France clients.
+                </li>
+                <li>
+                  Applied industrial engineering and QA practices to boost manufacturing efficiency by <span class="metric">15%</span> and cut rejections by <span class="metric">75%</span>.
+                </li>
+              </ul>
+            </div>
+
+            <div class="experience-item">
+              <div class="role-line">
+                <span class="role">Production Engineer</span>
+                <span class="company">· Ponds Exports Ltd (Hindustan Lever unit)</span>
+              </div>
+              <div class="meta">Jul 2004 – Feb 2007 · Puducherry, India</div>
+              <ul class="bullets">
+                <li>
+                  Optimized production lines for a new French footwear client, reducing rejection from <span class="metric">8% to 0.5%</span> and increasing orders by <span class="metric">8,400%</span>.
+                </li>
+                <li>
+                  Digitalized communication and approvals, removing 7% product rejections and achieving
+                  <span class="metric">99% first‑time approval</span> with 75% fewer stoppages.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="case-studies">
+          <h2>Selected Case Studies</h2>
+          <div class="card card-secondary">
+            <div class="case-image" aria-hidden="true"></div>
+            <div class="small-caption">
+              Hands‑on footwear development – last, pattern, materials and fit engineered together to reduce defects and returns.
+            </div>
+            <p class="section-intro">
+              These examples show how I use last engineering, PLM, Lean, value engineering and vendor development to solve hard problems in footwear fit, quality and speed to market.
+            </p>
+            <ul class="bullets">
+              <li>
+                <strong>Case Study 1: Sizing &amp; Fit Transformation – From Complaints to Repeat Customers.</strong>
+                Standardized last development using CAD prototyping and digital grading to solve recurring fit issues,
+                delivering a <span class="metric">40% drop in complaints</span>, <span class="metric">35% growth in repeat orders</span> and <span class="metric">20% faster sample approvals</span>,
+                adding approximately <span class="metric">₹1.8 crore in revenue</span>.
+              </li>
+              <li>
+                <strong>Case Study 2: Defect &amp; Delivery Turnaround – From Chronic Issues to Stable, Scalable Supply.</strong>
+                Used RCA and CAPA to cut defect rates from 8% to <span class="metric">1.2%</span> and lift on‑time delivery by <span class="metric">30%</span>;
+                re‑engineered workflows and checkpoints, saving an estimated <span class="metric">₹2.5 crore annually</span>.
+              </li>
+            </ul>
+            <div class="badge-row">
+              <span class="badge">Last &amp; Fit Engineering</span>
+              <span class="badge">Value Engineering &amp; Cost Optimization</span>
+              <span class="badge">Reverse Engineering Competitor Product</span>
+              <span class="badge">PLM &amp; Speed to Market</span>
+              <span class="badge">Vendor Development</span>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <aside>
+        <section id="known-for">
+          <h2>What I’m Known For</h2>
+          <div class="card card-compact">
+            <div class="aside-image" aria-hidden="true"></div>
+            <div class="small-caption">
+              Quality, sustainability and data‑driven decision‑making across a multi‑factory footwear network.
+            </div>
+            <div class="skills-list">
+              <div><strong>Product &amp; sourcing:</strong> end‑to‑end footwear product development (last, fit, materials, testing, scale‑up); sourcing strategy and vendor development across India and export markets.</div>
+              <div><strong>Value engineering &amp; reverse engineering:</strong> breaking down competitor and in‑house product to optimize design, materials and processes for cost, durability and comfort.</div>
+              <div><strong>Speed &amp; PLM:</strong> PLM‑driven speed improvements and launch discipline for e‑commerce and retail drops.</div>
+              <div><strong>Quality &amp; operations:</strong> Lean, QA and RCA/CAPA to reduce rejections, returns and waste across lines and factories.</div>
+              <div><strong>Sustainability &amp; AI:</strong> packaging and material sustainability at factory network scale; exploring AI, analytics and 3D tools to support fit, demand planning and vendor decisions.</div>
+            </div>
+            <div class="chips">
+              <span class="chip">Footwear size, fit &amp; last</span>
+              <span class="chip">Material library development</span>
+              <span class="chip">Cost negotiation &amp; margins</span>
+              <span class="chip">Lean manufacturing</span>
+              <span class="chip">RCA &amp; CAPA</span>
+              <span class="chip">Excel‑based analysis</span>
+              <span class="chip">Competitor &amp; market analysis</span>
+            </div>
+          </div>
+        </section>
+
+        <section id="open-to">
+          <h2>Open To</h2>
+          <div class="card">
+            <p class="section-intro">
+              I’m exploring senior roles where I can anchor the footwear product, sourcing and operations agenda for a brand, platform or manufacturing group.
+            </p>
+            <ul class="bullets">
+              <li>Product Development &amp; Sourcing Manager – Footwear &amp; Accessories</li>
+              <li>Category / Buying Manager – Footwear</li>
+              <li>Sourcing &amp; Quality Head – Fashion &amp; Lifestyle</li>
+              <li>Operations Excellence / Value Engineering – Footwear Manufacturing</li>
+            </ul>
+            <div class="badge-row" style="margin-top:10px;">
+              <span class="badge">Base: Bengaluru</span>
+              <span class="badge">Open to hybrid / remote</span>
+            </div>
+          </div>
+        </section>
+
+        <section id="education">
+          <h2>Education</h2>
+          <div class="card">
+            <div class="skills-list">
+              <div><strong>MBA, Retail Management</strong> – Manipal University Jaipur (Aug 2024 – Aug 2026)</div>
+              <div><strong>B.Tech, Leather Technology</strong> – Alagappa College of Technology, Anna University (Jan 2001 – Jun 2004)</div>
+            </div>
+          </div>
+        </section>
+
+        <section id="linkedin-posts">
+          <h2>LinkedIn Insights</h2>
+          <div class="card">
+            <p class="section-intro">
+              I regularly share practical insights on value engineering, reverse engineering and AI‑enabled decision‑making for footwear on LinkedIn.
+            </p>
+            <ul class="bullets">
+              <li>
+                <strong>Reverse engineering footwear for performance &amp; quality:</strong>
+                case examples of breaking down competitor shoes to understand design, compound and construction levers.
+              </li>
+              <li>
+                <strong>Balancing cost &amp; quality through material science:</strong>
+                posts on value engineering uppers, soles and comfort systems without hurting customer experience.
+              </li>
+              <li>
+                <strong>AI, 3D and tech in footwear:</strong>
+                explorations of how scanning, data and AI tools can improve fit, returns and merchandising in e‑commerce.
+              </li>
+            </ul>
+            <div class="badge-row">
+              <a class="pill-link" href="https://linkedin.com/in/krishvisugi" target="_blank" rel="noopener">
+                <span class="icon">🔗</span><span>View selected posts on LinkedIn</span>
+              </a>
+            </div>
+          </div>
+        </section>
+      </aside>
+    </main>
+
+    <footer>
+      <div>Last updated: Mar 2026</div>
+      <div>Open to conversations on footwear product development, sourcing strategy, value engineering and AI‑enabled decision‑making.</div>
+    </footer>
+  </div>
+</body>
+</html>
